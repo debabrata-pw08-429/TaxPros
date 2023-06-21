@@ -7,7 +7,6 @@ import "../styles/Navbar.css";
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar-container">
-
       <div className="logo">
         <img
           src="https://img.freepik.com/free-photo/3d-illustration-payment-confirmation-bill_107791-16608.jpg?size=626&ext=jpg&ga=GA1.1.2057281508.1687237735&semt=ais"
@@ -15,7 +14,7 @@ const Navbar: React.FC = () => {
         />
         TaxPros
       </div>
-      
+
       <div className="nav-links">
         <Link to="/" className="nav-link">
           <MdOutlineHomeWork className="nav-icons" />
