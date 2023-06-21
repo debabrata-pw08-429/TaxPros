@@ -1,10 +1,9 @@
-import React from "react";
 import { MdOutlineHomeWork } from "react-icons/Md";
 import { HiOutlineReceiptTax } from "react-icons/Hi";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   return (
     <nav className="navbar-container">
       <div className="logo">

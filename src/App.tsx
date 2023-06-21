@@ -8,7 +8,6 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      
       <Routes>
         <Route path="/" element={<HraCalculation />} />
         <Route path="/advance-tax-calculator" element={<TaxCalculator />} />
