@@ -1,4 +1,3 @@
-import { HiReceiptTax } from "react-icons/Hi";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
@@ -23,7 +22,11 @@ const Navbar = () => {
           HRA Cal.
         </Link>
         <Link to="/advance-tax-calculator" className="nav-link">
-          <HiReceiptTax className="nav-icons" />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRu67bBUk_Ojgp6tnEY0xEX0TCZ_I9wpSSEiVdHCI_EAJWkwBGVJ-GUQ&s=0"
+            alt="tax"
+            className="nav-icons"
+          />
           Advance Tax Cal.
         </Link>
       </div>
