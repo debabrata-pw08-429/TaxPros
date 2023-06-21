@@ -1,4 +1,4 @@
-import { MdHome } from "react-icons/Md";
+import { MdHome } from "react-icons/md";
 import { HiReceiptTax } from "react-icons/Hi";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
