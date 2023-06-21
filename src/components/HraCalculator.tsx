@@ -12,6 +12,7 @@ const HraCalculation: React.FC = () => {
   const [taxableHra, setTaxableHra] = useState<string>("0");
 
   const calculateHra = () => {
+    
     if (
       salary.trim() === "" ||
       actualRentPaid.trim() === "" ||

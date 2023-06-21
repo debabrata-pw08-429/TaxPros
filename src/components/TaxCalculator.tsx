@@ -57,10 +57,9 @@ const TaxCalculator = (): JSX.Element => {
       return;
     }
 
-    // Calculate tax logic goes here
+    // Calculating tax logic goes here
     const taxableIncome: number = netTaxableIncome - deductions;
     let totalTax = 0;
-
     // Calculate tax based on tax slabs
     if (taxableIncome <= 250000) {
       totalTax = 0;
@@ -71,26 +70,20 @@ const TaxCalculator = (): JSX.Element => {
     } else {
       totalTax = taxableIncome * 0.3;
     }
-
     // Calculate surcharge if applicable
     if (taxableIncome > 5000000) {
       const surchargePercentage: number = surcharge === 0 ? 10 : surcharge;
       totalTax += (totalTax * surchargePercentage) / 100;
     }
-
     // Calculate health and education cess
     const cess: number = (totalTax * healthEducationCess) / 100;
-
     // Calculate total tax liability
     const taxLiability: number = totalTax + cess - incomeTaxRelief;
-
     // Calculate total tax liability after considering relief other than relief u/s 87A
     const totalTaxLiabilityAfterRelief: number =
       taxLiability - reliefOtherThan87A;
-
     // Calculate tax payable after considering TDS/TCS/MAT (AMT) credit utilized
     const taxPayable: number = totalTaxLiabilityAfterRelief - tdsCreditUtilized;
-
     // Calculate assessed tax
     const finalTax: number = taxPayable > 0 ? taxPayable : 0;
     setAssessedTax(finalTax);
