@@ -1,4 +1,3 @@
-import { MdHome } from "react-icons/Md";
 import { HiReceiptTax } from "react-icons/Hi";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
@@ -16,7 +15,11 @@ const Navbar = () => {
 
       <div className="nav-links">
         <Link to="/" className="nav-link">
-          <MdHome className="nav-icons" />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNbr7HGC2j-o6fpZwmmhKwWMY3I_ezSsgZdVSbFCfrxRMdj6D6pgm&usqp=CAE&s"
+            alt="house"
+            className="nav-icons"
+          />
           HRA Cal.
         </Link>
         <Link to="/advance-tax-calculator" className="nav-link">
