@@ -8,10 +8,9 @@
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 
-  width: 60%;
+  width: 61%;
   margin: 0 auto;
 }
-
 
 img {
   width: 30px;
@@ -26,9 +25,21 @@ img {
   font-weight: bold;
 }
 
+.logo img {
+  width: 50px;
+}
+
 .nav-links {
   display: flex;
   gap: 1rem;
+}
+
+.nav-links .nav-link:nth-child(1) img {
+  padding-bottom: 8px;
+}
+
+.nav-links .nav-link:nth-child(2) img {
+  width: 25px;
 }
 
 .nav-link {
@@ -38,6 +49,10 @@ img {
   text-decoration: none;
   color: #333;
   transition: color 0.3s ease;
+}
+
+.nav-link p {
+  padding-bottom: -5px;
 }
 
 .nav-link:hover {

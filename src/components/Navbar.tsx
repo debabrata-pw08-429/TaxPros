@@ -19,7 +19,7 @@ const Navbar = () => {
             alt="house"
             className="nav-icons"
           />
-          HRA Cal.
+          <p>HRA Cal.</p>
         </Link>
         <Link to="/advance-tax-calculator" className="nav-link">
           <img
@@ -27,7 +27,7 @@ const Navbar = () => {
             alt="tax"
             className="nav-icons"
           />
-          Advance Tax Cal.
+          <p>Advance Tax Cal.</p>
         </Link>
       </div>
     </nav>
